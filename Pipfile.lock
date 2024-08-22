@@ -1,0 +1,37 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "77496b3326b97ad23643bb2cb604b55bfe0786b970387f34ac7550a1220bc61c"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.12"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "mpremote": {
+            "hashes": [
+                "sha256:e197a086eca6367da63bb716434a4e8075e0ea1886c4452bb3de046853d0ae5d",
+                "sha256:efe1f9758d8694d29981852c0a946a207765797bc596ef405e3e01517a5f1d9c"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.4'",
+            "version": "==1.23.0"
+        },
+        "pyserial": {
+            "hashes": [
+                "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb",
+                "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"
+            ],
+            "version": "==3.5"
+        }
+    },
+    "develop": {}
+}

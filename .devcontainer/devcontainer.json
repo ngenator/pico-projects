@@ -4,12 +4,12 @@
         "vscode": {
             "extensions": [
                 "Wokwi.wokwi-vscode",
-                "PKief.material-icon-theme",
-                "ms-python.python"
+                "ms-python.python",
+                "vscode-icons-team.vscode-icons"
             ],
             "settings": {
                 "workbench.colorTheme": "Solarized Dark",
-                "workbench.iconTheme": "material-icon-theme"
+                "workbench.iconTheme": "vscode-icons"
             }
         }
     }

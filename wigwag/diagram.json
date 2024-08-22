@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Dan Ng",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": 5,
+      "left": 114.2,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": -143.8, "left": 201.6, "attrs": {} },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": 101,
+      "left": 114.2,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": 62, "left": -83.3, "attrs": {} }
+  ],
+  "connections": [
+    [ "pot1:VCC", "pico:3V3", "red", [ "h0" ] ],
+    [ "pot1:SIG", "pico:GP28", "green", [ "h0" ] ],
+    [ "pot2:SIG", "pico:GP27", "green", [ "h-19.2", "v-74.45" ] ],
+    [ "pot2:VCC", "pico:3V3", "red", [ "h-9.6", "v-92.85" ] ],
+    [ "pot1:GND", "pico:GND.7", "black", [ "v57.6", "h-206", "v-25.65" ] ],
+    [ "pot2:GND", "pico:GND.7", "black", [ "v-38.4", "h-206", "v-25.65" ] ],
+    [ "relay1:VCC", "pico:3V3", "red", [ "h-96", "v175.95" ] ],
+    [ "relay1:GND", "pico:GND.8", "black", [ "h-76.8", "v146.75" ] ],
+    [ "relay1:IN", "pico:GP15", "green", [ "h-307.2", "v300.55" ] ],
+    [ "pico:GP14", "sw1:2", "green", [ "h0" ] ],
+    [ "pico:GND.4", "sw1:1", "black", [ "h0" ] ],
+    [ "pico:3V3", "sw1:3", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
