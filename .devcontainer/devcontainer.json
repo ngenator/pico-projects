@@ -1,0 +1,16 @@
+{
+    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Wokwi.wokwi-vscode",
+                "PKief.material-icon-theme",
+                "ms-python.python"
+            ],
+            "settings": {
+                "workbench.colorTheme": "Solarized Dark",
+                "workbench.iconTheme": "material-icon-theme"
+            }
+        }
+    }
+}
