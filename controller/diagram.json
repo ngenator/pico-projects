@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "author": "Dan Ng",
+    "editor": "wokwi",
+    "parts": [
+      {
+        "type": "wokwi-pi-pico",
+        "id": "pico",
+        "top": 0,
+        "left": 0,
+        "attrs": { "env": "micropython-20231227-v1.22.0" }
+      },
+      {
+        "type": "board-ssd1306",
+        "id": "oled1",
+        "top": 175.94,
+        "left": -239.77,
+        "attrs": { "i2cAddress": "0x3c" }
+      },
+      { "type": "wokwi-ky-040", "id": "encoder1", "top": 126.5, "left": -154.4, "attrs": {} }
+    ],
+    "connections": [
+      [ "oled1:GND", "pico:GND.1", "black", [ "v0" ] ],
+      [ "oled1:VCC", "pico:3V3", "red", [ "v0" ] ],
+      [ "pico:GP27", "oled1:SCL", "green", [ "h0" ] ],
+      [ "pico:GP26", "oled1:SDA", "green", [ "h0" ] ],
+      [ "encoder1:GND", "pico:GND.1", "black", [ "h19.2", "v-140.05" ] ],
+      [ "encoder1:VCC", "pico:3V3", "red", [ "h9.6", "v-210.8" ] ],
+      [ "encoder1:CLK", "pico:GP10", "green", [ "h0" ] ],
+      [ "encoder1:DT", "pico:GP11", "green", [ "h0" ] ],
+      [ "encoder1:SW", "pico:GP12", "green", [ "h0" ] ]
+    ],
+    "dependencies": {}
+  }
