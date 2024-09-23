@@ -9,8 +9,12 @@
             ],
             "settings": {
                 "workbench.colorTheme": "Solarized Dark",
-                "workbench.iconTheme": "vscode-icons"
+                "workbench.iconTheme": "vscode-icons",
+                "python.analysis.diagnosticSeverityOverrides": {
+                    "reportMissingModuleSource": "none"
+                }
             }
         }
-    }
+    },
+    "postCreateCommand": "pipenv sync"
 }

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "77496b3326b97ad23643bb2cb604b55bfe0786b970387f34ac7550a1220bc61c"
+            "sha256": "79ac98a80b2308bd047f05acd82aeee1b6bc3366ed05558070bd596327229aff"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,23 @@
         ]
     },
     "default": {
+        "micropython-rp2-pico-w-stubs": {
+            "hashes": [
+                "sha256:91ab52533620c6bc69617d5ea72d74bd96b9b70de64aec645fd26c1bc40c6659",
+                "sha256:ce2bb383baca8b95dbb93280ea0bce5e335a82aa7134af0c2be77a4a6c9f14e0"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8' and python_version < '4.0'",
+            "version": "==1.20.0.post5"
+        },
+        "micropython-stdlib-stubs": {
+            "hashes": [
+                "sha256:0e20e044f24b7f5d67205fd08780aa4ca0ea3741e4d14406ff7dca1ed8364f49",
+                "sha256:a455a01a5d7700ef99124072d94c967d5123778512260d87679e47e57f81e3d8"
+            ],
+            "markers": "python_version >= '3.8' and python_version < '4.0'",
+            "version": "==1.1.2"
+        },
         "mpremote": {
             "hashes": [
                 "sha256:e197a086eca6367da63bb716434a4e8075e0ea1886c4452bb3de046853d0ae5d",

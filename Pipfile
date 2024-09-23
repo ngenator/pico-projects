@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 mpremote = "*"
+micropython-rp2-pico-w-stubs = "*"
 
 [dev-packages]
 
